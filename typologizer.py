@@ -20,8 +20,8 @@ urs = []
 for ur in ['X' * i for i in range(1,6)]:
 	urs.append(ur)
 	for i in range(len(ur)):
-		ur2 = ur[:i] + 'x' + ur[i+1:]
-		urs.append(ur2)
+#		ur2 = ur[:i] + 'x' + ur[i+1:]
+#		urs.append(ur2)
 		ur3 = ur[:i] + 'H' + ur[i+1:]
 		urs.append(ur3)
 
@@ -30,7 +30,7 @@ from gen import gen_autoseg_shift as gen
 con = [AlignR(), NonFinality(), LinkH(), Float(), Maxlink(), Deplink(), Max()]
 
 # allow shift?
-shift = True
+shift = False
 
 if shift:
 	con.append(NoFlop())
