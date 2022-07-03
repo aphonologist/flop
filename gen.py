@@ -67,6 +67,14 @@ def gen_autoseg_shift(input, shift=False):
 				if input[j] == 'X':
 					candidate2 = candidate[:j] + 'X' + candidate[j+1:]
 					candidates.add(candidate2)
+		# delink
+		if input[i] == 'H':
+			candidate = input[:i] + 'x' + input[i+1:]
+			candidates.add(candidate)
+		# relink
+		if input[i] == 'x':
+			candidate = input[:i] + 'H' + input[i+1:]
+			candidates.add(candidate)
 
 	if shift:
 		for i in range(len(input) - 1):
