@@ -16,21 +16,19 @@ def leq(v1, v2):
 	return True
 
 # underlying forms
-urs = []
-for ur in ['X' * i for i in range(1,6)]:
-	urs.append(ur)
-	for i in range(len(ur)):
-#		ur2 = ur[:i] + 'x' + ur[i+1:]
-#		urs.append(ur2)
-		ur3 = ur[:i] + 'H' + ur[i+1:]
-		urs.append(ur3)
+urs = ['X' * i for i in range(1,6)]
+for i in range(5):
+	ur = urs[i]
+	for j in range(len(ur)):
+		ur2 = ur[:j] + 'H' + ur[j+1:]
+		urs.append(ur2)
 
 from gen import gen_autoseg_shift as gen
 
 con = [AlignR(), NonFinality(), LinkH(), Float(), Maxlink(), Deplink(), Max()]
 
 # allow shift?
-shift = False
+shift = True
 
 if shift:
 	con.append(NoFlop())
@@ -130,10 +128,7 @@ surface_gram = {}
 
 for language in sorted(typology):
 	# get surface forms
-	srs = set()
-	for derivation in language[1:]:
-		srs.add(derivation[-1])
-	sr_list = sorted(srs, key = lambda x : [len(x), x])
+	sr_list = [x[-1] for x in language[1:]]
 	sr_str = '_' + ' '.join(sr_list) + '\n'
 	if sr_str not in surface_gram:
 		surface_gram[sr_str] = []
@@ -156,10 +151,9 @@ for language in sorted(typology):
 		con_str += '\n'
 
 	# add to dictionary
-	surface_gram[sr_str].append([srs, deriv_str, con_str])
+	surface_gram[sr_str].append([sr_str, deriv_str, con_str])
 
 for s in surface_gram:
-	print(s)
 	for g in sorted(surface_gram[s]):
 		for x in g:
 			print(x)

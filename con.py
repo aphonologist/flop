@@ -7,10 +7,9 @@ class AlignR:
 		self.name = 'Align-R'
 
 	def vios(self, input, candidate):
-		candidate = candidate.replace('S', 'H')
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['H', 'R']:
+			if candidate[i] in ['H', 'R', 'S']:
 				loci[0] += len(candidate) - i - 1
 		return loci
 
@@ -21,8 +20,7 @@ class NonFinality:
 		self.name = 'NonFinality'
 
 	def vios(self, input, candidate):
-		candidate = candidate.replace('S', 'H')
-		if candidate[-1] in ['H','R']:
+		if candidate[-1] in ['H', 'R', 'S']:
 			return [1]
 		return [0]
 
@@ -33,10 +31,9 @@ class LinkH:
 		self.name = '*Link(H)'
 
 	def vios(self, input, candidate):
-		candidate = candidate.replace('S', 'H')
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['H', 'L', 'R', 'M']:
+			if candidate[i] in ['H', 'L', 'R', 'M', 'S']:
 				loci[0] += 1
 		return loci
 
@@ -47,7 +44,6 @@ class Float:
 		self.name = '*Float'
 
 	def vios(self, input, candidate):
-		candidate = candidate.replace('S', 'H')
 		loci = [0]
 		for i in range(len(candidate)):
 			if candidate[i] in ['x']:
