@@ -8,7 +8,7 @@ class AlignR:
 
 	def vios(self, input, candidate):
 		loci = [0]
-		for i in range(len(candidate)):
+		for i in range(len(candidate) - 1):
 			if candidate[i] in ['H', 'R']:
 				loci[0] += len(candidate) - i - 1
 		return loci
@@ -46,7 +46,7 @@ class Float:
 	def vios(self, input, candidate):
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['x']:
+			if candidate[i] == 'x':
 				loci[0] += 1
 		return loci
 
@@ -58,8 +58,12 @@ class Maxlink:
 
 	def vios(self, input, candidate):
 		for i in range(len(candidate) - 1):
-			if (input[i:i+2], candidate[i:i+2]) in [('XH', 'Xx'), ('HX', 'xX'), ('LM', 'XL'), ('LR', 'XH'), ('MR', 'RX'), ('LR', 'HX')]:
+			if (input[i:i+2], candidate[i:i+2]) in [('LM', 'XL'), ('LR', 'XH'), ('MR', 'RX'), ('LR', 'HX')]:
 				return [1]
+			if (input[i], candidate[i]) == ('H', 'x'):
+				return [1]
+		if (input[-1], candidate[-1]) == ('H', 'x'):
+			return [1]
 		return [0]
 
 # Dep(link)
@@ -72,18 +76,10 @@ class Deplink:
 		for i in range(len(candidate) - 1):
 			if (input[i:i+2], candidate[i:i+2]) in [('XL', 'LM'), ('XH', 'LR'), ('RX', 'MR'), ('HX', 'LR')]:
 				return [1]
-		for i in range(len(candidate)):
 			if (input[i], candidate[i]) == ('x','H'):
 				return [1]
-		xX = False
-		XH = False
-		for i in range(len(candidate)):
-			if (input[i], candidate[i]) == ('x', 'X'):
-				xX = True
-			if (input[i], candidate[i]) == ('X', 'H'):
-				XH = True
-			if xX and XH:
-				return [1]
+		if (input[-1], candidate[-1]) == ('x','H'):
+			return [1]
 		return [0]
 
 # Max
@@ -93,7 +89,13 @@ class Max:
 		self.name = 'Max'
 
 	def vios(self, input, candidate):
+		delink = False
+		relink = False
 		for i in range(len(candidate)):
 			if (input[i], candidate[i]) == ('x', 'X'):
-				return [1]
+				delink = True
+			if (input[i], candidate[i]) == ('X', 'H'):
+				relink = True
+		if delink and not relink:
+			return [1]
 		return [0]

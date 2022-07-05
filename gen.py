@@ -13,6 +13,27 @@ def gen_autoseg_shift(input):
 	# add fully faithful candidate
 	candidates.add(input)
 
+	for i in range(len(input)):
+		# delete a floating tone
+		# x -> X
+		# link a floating tone
+		# x -> H ; x -> X and X -> H
+		if input[i] == 'x':
+			candidate = input[:i] + 'X' + input[i+1:]
+			candidates.add(candidate)
+			for j in range(len(candidate)):
+				if candidate[j] == 'X':
+					candidate2 = candidate[:j] + 'H' + candidate[j+1:]
+					candidates.add(candidate2)
+		# delink and float
+		if input[i] == 'H':
+			candidate = input[:i] + 'x' + input[i+1:]
+			candidates.add(candidate)
+		# relink
+		if input[i] == 'x':
+			candidate = input[:i] + 'H' + input[i+1:]
+			candidates.add(candidate)
+
 	for i in range(len(input) - 1):
 		# spread to the left
 		# XL -> LM ; XH -> LR
@@ -30,14 +51,6 @@ def gen_autoseg_shift(input):
 		if input[i:i+2] == 'HX':
 			candidate = input[:i] + 'LR' + input[i+2:]
 			candidates.add(candidate)
-		# delink and float
-		# XH -> Xx ; HX -> xX
-		if input[i:i+2] == 'XH':
-			candidate = input[:i] + 'Xx' + input[i+2:]
-			candidates.add(candidate)
-		if input[i:i+2] == 'HX':
-			candidate = input[:i] + 'xX' + input[i+2:]
-			candidates.add(candidate)
 		# delink from the left
 		# LM -> XL ; LR -> XH
 		# delink from the right
@@ -52,27 +65,6 @@ def gen_autoseg_shift(input):
 			candidate = input[:i] + 'XH' + input[i+2:]
 			candidates.add(candidate)
 			candidate = input[:i] + 'HX' + input[i+2:]
-			candidates.add(candidate)
-
-	for i in range(len(input)):
-		# delete a floating tone
-		# x -> X
-		# link a floating tone
-		# x -> H ; x -> X and X -> H
-		if input[i] == 'x':
-			candidate = input[:i] + 'X' + input[i+1:]
-			candidates.add(candidate)
-			for j in range(len(input)):
-				if input[j] == 'X':
-					candidate2 = candidate[:j] + 'X' + candidate[j+1:]
-					candidates.add(candidate2)
-		# delink
-		if input[i] == 'H':
-			candidate = input[:i] + 'x' + input[i+1:]
-			candidates.add(candidate)
-		# relink
-		if input[i] == 'x':
-			candidate = input[:i] + 'H' + input[i+1:]
 			candidates.add(candidate)
 
 	return sorted(list(candidates))

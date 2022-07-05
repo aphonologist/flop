@@ -1,54 +1,3 @@
-_X XX XXX XXXX XXXXX x HX Xx XHX XHX XXx XXHX XXHX XXHX XXXx XXXHX XXXHX XXXHX XXXHX XXXXx
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[HX]
-	HX -> HX
-	/XH/	[Xx]
-	XH -> Xx -> Xx
-	/HXX/	[XHX]
-	HXX -> LRX -> XHX -> XHX
-	/XHX/	[XHX]
-	XHX -> XHX
-	/XXH/	[XXx]
-	XXH -> XXx -> XXx
-	/HXXX/	[XXHX]
-	HXXX -> LRXX -> LMRX -> XLRX -> XXHX -> XXHX
-	/XHXX/	[XXHX]
-	XHXX -> XLRX -> XXHX -> XXHX
-	/XXHX/	[XXHX]
-	XXHX -> XXHX
-	/XXXH/	[XXXx]
-	XXXH -> XXXx -> XXXx
-	/HXXXX/	[XXXHX]
-	HXXXX -> LRXXX -> LMRXX -> LMMRX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
-	/XHXXX/	[XXXHX]
-	XHXXX -> XLRXX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
-	/XXHXX/	[XXXHX]
-	XXHXX -> XXLRX -> XXXHX -> XXXHX
-	/XXXHX/	[XXXHX]
-	XXXHX -> XXXHX
-	/XXXXH/	[XXXXx]
-	XXXXH -> XXXXx -> XXXXx
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	e	W	e	e	e	
-	W	e	L	e	e	L	e	
-	e	W	e	L	e	e	e	
-	e	e	W	e	L	e	e	
-	e	e	e	L	e	e	W	
-
-
 _X XX XXX XXXX XXXXX x HX Xx LRX XHX XXx LMRX XLRX XXHX XXXx LMMRX XLMRX XXLRX XXXHX XXXXx
 
 	/X/	[X]
@@ -93,10 +42,9 @@ _X XX XXX XXXX XXXXX x HX Xx LRX XHX XXx LMRX XLRX XXHX XXXx LMMRX XLMRX XXLRX X
 	XXXXH -> XXXXx -> XXXXx
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	e	W	W	e	e	
-	W	e	L	e	e	L	e	
-	e	W	e	L	L	e	e	
-	e	e	L	e	W	e	e	
+	L	e	e	e	W	e	e	
+	W	e	L	L	e	L	e	
+	e	W	e	e	L	e	e	
 	e	e	e	L	e	e	W	
 
 
@@ -144,9 +92,10 @@ _X XX XXX XXXX XXXXX x HX Xx HXX XHX XXx HXXX XHXX XXHX XXXx HXXXX XHXXX XXHXX X
 	XXXXH -> XXXXx -> XXXXx
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	L	W	W	e	e	
+	L	e	L	e	W	e	e	
 	L	e	W	e	e	W	e	
-	e	W	e	L	L	e	e	
+	W	e	W	L	e	e	e	
+	e	W	e	e	L	e	e	
 	e	e	e	L	e	e	W	
 
 
@@ -243,8 +192,8 @@ _X XX XXX XXXX XXXXX X HX XX XHX XHX XXX XXHX XXHX XXHX XXXX XXXHX XXXHX XXXHX X
 	XXXXH -> XXXXx -> XXXXX -> XXXXX
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	e	W	e	e	L	
-	W	e	L	e	e	L	e	
+	L	e	e	W	e	e	e	
+	W	e	L	e	e	L	L	
 	e	W	e	L	e	e	e	
 	e	e	W	e	L	e	e	
 
@@ -294,7 +243,7 @@ _X XX XXX XXXX XXXXX X HX XX LRX XHX XXX LMRX XLRX XXHX XXXX LMMRX XLMRX XXLRX X
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	L	e	e	W	W	e	e	
-	W	e	L	e	e	L	e	
+	W	e	L	e	e	L	L	
 	e	W	e	L	L	e	e	
 	e	e	L	e	W	e	e	
 	e	e	e	W	e	e	L	
@@ -346,6 +295,7 @@ _X XX XXX XXXX XXXXX X HX XX HXX XHX XXX HXXX XHXX XXHX XXXX HXXXX XHXXX XXHXX X
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	L	e	L	W	W	e	e	
 	L	e	W	e	e	W	e	
+	W	e	W	e	e	e	L	
 	e	W	e	L	L	e	e	
 	e	e	e	W	e	e	L	
 
@@ -399,6 +349,310 @@ _X XX XXX XXXX XXXXX X XX XX XXX XXX XXX XXXX XXXX XXXX XXXX XXXXX XXXXX XXXXX X
 	e	e	e	W	e	e	L	
 
 
+_X XX XXX XXXX XXXXX x HX HX XHX XHX XHX XXHX XXHX XXHX XXHX XXXHX XXXHX XXXHX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[x]
+	H -> x -> x
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[XHX]
+	HXX -> LRX -> XHX -> XHX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[XXHX]
+	HXXX -> LRXX -> LMRX -> XLRX -> XXHX -> XXHX
+	/XHXX/	[XXHX]
+	XHXX -> XLRX -> XXHX -> XXHX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[XXXHX]
+	HXXXX -> LRXXX -> LMRXX -> LMMRX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
+	/XHXXX/	[XXXHX]
+	XHXXX -> XLRXX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
+	/XXHXX/	[XXXHX]
+	XXHXX -> XXLRX -> XXXHX -> XXXHX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	e	W	e	e	e	
+	W	e	L	e	e	L	e	
+	e	W	e	L	e	e	e	
+	e	e	W	e	L	e	e	
+	e	e	e	L	e	e	W	
+
+
+_X XX XXX XXXX XXXXX X HX HX XHX XHX XHX XXHX XXHX XXHX XXHX XXXHX XXXHX XXXHX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[X]
+	H -> x -> X -> X
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[XHX]
+	HXX -> LRX -> XHX -> XHX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[XXHX]
+	HXXX -> LRXX -> LMRX -> XLRX -> XXHX -> XXHX
+	/XHXX/	[XXHX]
+	XHXX -> XLRX -> XXHX -> XXHX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[XXXHX]
+	HXXXX -> LRXXX -> LMRXX -> LMMRX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
+	/XHXXX/	[XXXHX]
+	XHXXX -> XLRXX -> XLMRX -> XXLRX -> XXXHX -> XXXHX
+	/XXHXX/	[XXXHX]
+	XXHXX -> XXLRX -> XXXHX -> XXXHX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	e	e	e	e	W	
+	W	e	L	e	e	L	e	
+	e	W	e	L	e	e	e	
+	e	e	W	e	L	e	e	
+	e	e	e	W	e	e	L	
+
+
+_X XX XXX XXXX XXXXX x HX HX LRX XHX XHX LMRX XLRX XXHX XXHX LMMRX XLMRX XXLRX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[x]
+	H -> x -> x
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[LRX]
+	HXX -> LRX -> LRX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[LMRX]
+	HXXX -> LRXX -> LMRX -> LMRX
+	/XHXX/	[XLRX]
+	XHXX -> XLRX -> XLRX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[LMMRX]
+	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMRX
+	/XHXXX/	[XLMRX]
+	XHXXX -> XLRXX -> XLMRX -> XLMRX
+	/XXHXX/	[XXLRX]
+	XXHXX -> XXLRX -> XXLRX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	e	W	e	e	e	
+	W	e	L	e	e	L	e	
+	e	W	e	L	L	e	e	
+	e	e	L	e	W	e	e	
+	e	e	e	L	e	e	W	
+
+
+_X XX XXX XXXX XXXXX X HX HX LRX XHX XHX LMRX XLRX XXHX XXHX LMMRX XLMRX XXLRX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[X]
+	H -> x -> X -> X
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[LRX]
+	HXX -> LRX -> LRX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[LMRX]
+	HXXX -> LRXX -> LMRX -> LMRX
+	/XHXX/	[XLRX]
+	XHXX -> XLRX -> XLRX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[LMMRX]
+	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMRX
+	/XHXXX/	[XLMRX]
+	XHXXX -> XLRXX -> XLMRX -> XLMRX
+	/XXHXX/	[XXLRX]
+	XXHXX -> XXLRX -> XXLRX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	e	e	e	e	W	
+	W	e	L	e	e	L	e	
+	e	W	e	L	L	e	e	
+	e	e	L	e	W	e	e	
+	e	e	e	W	e	e	L	
+
+
+_X XX XXX XXXX XXXXX x HX HX HXX XHX XHX HXXX XHXX XXHX XXHX HXXXX XHXXX XXHXX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[x]
+	H -> x -> x
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[HXX]
+	HXX -> HXX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[HXXX]
+	HXXX -> HXXX
+	/XHXX/	[XHXX]
+	XHXX -> XHXX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[HXXXX]
+	HXXXX -> HXXXX
+	/XHXXX/	[XHXXX]
+	XHXXX -> XHXXX
+	/XXHXX/	[XXHXX]
+	XXHXX -> XXHXX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	L	W	e	e	e	
+	L	e	W	e	e	W	e	
+	e	W	e	L	L	e	e	
+	e	e	e	L	e	e	W	
+
+
+_X XX XXX XXXX XXXXX X HX HX HXX XHX XHX HXXX XHXX XXHX XXHX HXXXX XHXXX XXHXX XXXHX XXXHX
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[X]
+	H -> x -> X -> X
+	/HX/	[HX]
+	HX -> HX
+	/XH/	[HX]
+	XH -> Xx -> HX -> HX
+	/HXX/	[HXX]
+	HXX -> HXX
+	/XHX/	[XHX]
+	XHX -> XHX
+	/XXH/	[XHX]
+	XXH -> XXx -> XHX -> XHX
+	/HXXX/	[HXXX]
+	HXXX -> HXXX
+	/XHXX/	[XHXX]
+	XHXX -> XHXX
+	/XXHX/	[XXHX]
+	XXHX -> XXHX
+	/XXXH/	[XXHX]
+	XXXH -> XXXx -> XXHX -> XXHX
+	/HXXXX/	[HXXXX]
+	HXXXX -> HXXXX
+	/XHXXX/	[XHXXX]
+	XHXXX -> XHXXX
+	/XXHXX/	[XXHXX]
+	XXHXX -> XXHXX
+	/XXXHX/	[XXXHX]
+	XXXHX -> XXXHX
+	/XXXXH/	[XXXHX]
+	XXXXH -> XXXXx -> XXXHX -> XXXHX
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	e	L	e	e	e	W	
+	L	e	W	e	e	W	e	
+	e	W	e	L	L	e	e	
+	e	e	e	W	e	e	L	
+
+
 _X XX XXX XXXX XXXXX H HX XH XHX XHX XXH XXHX XXHX XXHX XXXH XXXHX XXXHX XXXHX XXXHX XXXXH
 
 	/X/	[X]
@@ -449,106 +703,6 @@ _X XX XXX XXXX XXXXX H HX XH XHX XHX XXH XXHX XXHX XXHX XXXH XXXHX XXXHX XXXHX X
 	e	e	W	e	L	e	e	
 
 
-_X XX XXX XXXX XXXXX x HX XH LRX XHX XXH LMRX XLRX XXHX XXXH LMMRX XLMRX XXLRX XXXHX XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[HX]
-	HX -> HX
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[LRX]
-	HXX -> LRX -> LRX
-	/XHX/	[XHX]
-	XHX -> XHX
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[LMRX]
-	HXXX -> LRXX -> LMRX -> LMRX
-	/XHXX/	[XLRX]
-	XHXX -> XLRX -> XLRX
-	/XXHX/	[XXHX]
-	XXHX -> XXHX
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[LMMRX]
-	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMRX
-	/XHXXX/	[XLMRX]
-	XHXXX -> XLRXX -> XLMRX -> XLMRX
-	/XXHXX/	[XXLRX]
-	XXHXX -> XXLRX -> XXLRX
-	/XXXHX/	[XXXHX]
-	XXXHX -> XXXHX
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	W	e	L	e	e	e	
-	W	e	L	e	e	L	e	
-	e	L	e	e	W	e	e	
-	e	e	e	L	e	e	W	
-
-
-_X XX XXX XXXX XXXXX X HX XH LRX XHX XXH LMRX XLRX XXHX XXXH LMMRX XLMRX XXLRX XXXHX XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[X]
-	H -> x -> X -> X
-	/HX/	[HX]
-	HX -> HX
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[LRX]
-	HXX -> LRX -> LRX
-	/XHX/	[XHX]
-	XHX -> XHX
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[LMRX]
-	HXXX -> LRXX -> LMRX -> LMRX
-	/XHXX/	[XLRX]
-	XHXX -> XLRX -> XLRX
-	/XXHX/	[XXHX]
-	XXHX -> XXHX
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[LMMRX]
-	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMRX
-	/XHXXX/	[XLMRX]
-	XHXXX -> XLRXX -> XLMRX -> XLMRX
-	/XXHXX/	[XXLRX]
-	XXHXX -> XXLRX -> XXLRX
-	/XXXHX/	[XXXHX]
-	XXXHX -> XXXHX
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	W	e	L	e	e	e	
-	W	e	L	e	e	L	e	
-	e	L	e	e	W	e	e	
-	e	e	e	W	e	e	L	
-
-
 _X XX XXX XXXX XXXXX H HX XH LRX XHX XXH LMRX XLRX XXHX XXXH LMMRX XLMRX XXLRX XXXHX XXXXH
 
 	/X/	[X]
@@ -595,108 +749,8 @@ _X XX XXX XXXX XXXXX H HX XH LRX XHX XXH LMRX XLRX XXHX XXXH LMMRX XLMRX XXLRX X
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	L	W	e	e	e	e	e	
 	W	e	L	e	e	L	e	
-	e	L	e	W	e	e	e	
+	e	L	e	W	W	e	e	
 	e	e	L	e	W	e	e	
-
-
-_X XX XXX XXXX XXXXX x HX XH HXX XHX XXH HXXX XHXX XXHX XXXH HXXXX XHXXX XXHXX XXXHX XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[HX]
-	HX -> HX
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[HXX]
-	HXX -> HXX
-	/XHX/	[XHX]
-	XHX -> XHX
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[HXXX]
-	HXXX -> HXXX
-	/XHXX/	[XHXX]
-	XHXX -> XHXX
-	/XXHX/	[XXHX]
-	XXHX -> XXHX
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[HXXXX]
-	HXXXX -> HXXXX
-	/XHXXX/	[XHXXX]
-	XHXXX -> XHXXX
-	/XXHXX/	[XXHXX]
-	XXHXX -> XXHXX
-	/XXXHX/	[XXXHX]
-	XXXHX -> XXXHX
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	L	L	e	W	e	e	
-	L	e	W	e	e	W	e	
-	e	W	W	L	e	e	e	
-	e	e	e	L	e	e	W	
-
-
-_X XX XXX XXXX XXXXX X HX XH HXX XHX XXH HXXX XHXX XXHX XXXH HXXXX XHXXX XXHXX XXXHX XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[X]
-	H -> x -> X -> X
-	/HX/	[HX]
-	HX -> HX
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[HXX]
-	HXX -> HXX
-	/XHX/	[XHX]
-	XHX -> XHX
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[HXXX]
-	HXXX -> HXXX
-	/XHXX/	[XHXX]
-	XHXX -> XHXX
-	/XXHX/	[XXHX]
-	XXHX -> XXHX
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[HXXXX]
-	HXXXX -> HXXXX
-	/XHXXX/	[XHXXX]
-	XHXXX -> XHXXX
-	/XXHXX/	[XXHXX]
-	XXHXX -> XXHXX
-	/XXXHX/	[XXXHX]
-	XXXHX -> XXXHX
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	L	L	e	W	e	e	
-	L	e	W	e	e	W	e	
-	e	W	W	L	e	e	e	
-	e	e	e	W	e	e	L	
 
 
 _X XX XXX XXXX XXXXX H HX XH HXX XHX XXH HXXX XHXX XXHX XXXH HXXXX XHXXX XXHXX XXXHX XXXXH
@@ -743,59 +797,8 @@ _X XX XXX XXXX XXXXX H HX XH HXX XHX XXH HXXX XHXX XXHX XXXH HXXXX XHXXX XXHXX X
 	XXXXH -> XXXXH
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	L	L	L	W	W	e	e	
 	L	e	W	e	e	W	e	
-	L	e	e	W	W	e	e	
-	e	L	L	W	e	e	e	
-
-
-_X XX XXX XXXX XXXXX x LR XH xXX XLR XXH xXXX XxXX XXLR XXXH xXXXX XxXXX XXxXX XXXLR XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[LR]
-	HX -> LR -> LR
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[xXX]
-	HXX -> xXX -> xXX
-	/XHX/	[XLR]
-	XHX -> XLR -> XLR
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[xXXX]
-	HXXX -> xXXX -> xXXX
-	/XHXX/	[XxXX]
-	XHXX -> XxXX -> XxXX
-	/XXHX/	[XXLR]
-	XXHX -> XXLR -> XXLR
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[xXXXX]
-	HXXXX -> xXXXX -> xXXXX
-	/XHXXX/	[XxXXX]
-	XHXXX -> XxXXX -> XxXXX
-	/XXHXX/	[XXxXX]
-	XXHXX -> XXxXX -> XXxXX
-	/XXXHX/	[XXXLR]
-	XXXHX -> XXXLR -> XXXLR
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	e	L	e	e	
-	e	L	L	e	W	L	e	
-	e	W	W	L	e	e	e	
-	e	e	e	L	e	e	W	
 
 
 _X XX XXX XXXX XXXXX H LR XH xXX XLR XXH xXXX XxXX XXLR XXXH xXXXX XxXXX XXxXX XXXLR XXXXH
@@ -842,61 +845,10 @@ _X XX XXX XXXX XXXXX H LR XH xXX XLR XXH xXXX XxXX XXLR XXXH xXXXX XxXXX XXxXX X
 	XXXXH -> XXXXH
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	L	L	e	e	
-	e	L	L	W	e	e	e	
-	e	e	L	e	W	e	e	
-	e	e	e	L	e	e	W	
-	e	e	e	W	W	L	e	
-
-
-_X XX XXX XXXX XXXXX X LR XH XXX XLR XXH XXXX XXXX XXLR XXXH XXXXX XXXXX XXXXX XXXLR XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[X]
-	H -> x -> X -> X
-	/HX/	[LR]
-	HX -> LR -> LR
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[XXX]
-	HXX -> xXX -> XXX -> XXX
-	/XHX/	[XLR]
-	XHX -> XLR -> XLR
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[XXXX]
-	HXXX -> xXXX -> XXXX -> XXXX
-	/XHXX/	[XXXX]
-	XHXX -> XxXX -> XXXX -> XXXX
-	/XXHX/	[XXLR]
-	XXHX -> XXLR -> XXLR
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[XXXXX]
-	HXXXX -> xXXXX -> XXXXX -> XXXXX
-	/XHXXX/	[XXXXX]
-	XHXXX -> XxXXX -> XXXXX -> XXXXX
-	/XXHXX/	[XXXXX]
-	XXHXX -> XXxXX -> XXXXX -> XXXXX
-	/XXXHX/	[XXXLR]
-	XXXHX -> XXXLR -> XXXLR
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	W	e	e	e	L	e	e	
 	e	L	L	e	W	L	e	
 	e	W	W	L	e	e	e	
-	e	e	e	W	e	e	L	
+	e	e	e	L	e	e	W	
 
 
 _X XX XXX XXXX XXXXX H LR XH XXX XLR XXH XXXX XXXX XXLR XXXH XXXXX XXXXX XXXXX XXXLR XXXXH
@@ -944,109 +896,61 @@ _X XX XXX XXXX XXXXX H LR XH XXX XLR XXH XXXX XXXX XXLR XXXH XXXXX XXXXX XXXXX X
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	W	e	e	L	L	e	e	
-	e	L	L	W	e	e	L	
+	e	L	e	W	W	L	e	
+	e	W	W	e	e	e	L	
+	e	e	L	e	W	e	e	
+	e	e	e	W	e	e	L	
+
+
+_X XX XXX XXXX XXXXX H LR XH XXH XLR XXH XXXH XXXH XXLR XXXH XXXXH XXXXH XXXXH XXXLR XXXXH
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[H]
+	H -> H
+	/HX/	[LR]
+	HX -> LR -> LR
+	/XH/	[XH]
+	XH -> XH
+	/HXX/	[XXH]
+	HXX -> xXX -> XXH -> XXH
+	/XHX/	[XLR]
+	XHX -> XLR -> XLR
+	/XXH/	[XXH]
+	XXH -> XXH
+	/HXXX/	[XXXH]
+	HXXX -> xXXX -> XXXH -> XXXH
+	/XHXX/	[XXXH]
+	XHXX -> XxXX -> XXXH -> XXXH
+	/XXHX/	[XXLR]
+	XXHX -> XXLR -> XXLR
+	/XXXH/	[XXXH]
+	XXXH -> XXXH
+	/HXXXX/	[XXXXH]
+	HXXXX -> xXXXX -> XXXXH -> XXXXH
+	/XHXXX/	[XXXXH]
+	XHXXX -> XxXXX -> XXXXH -> XXXXH
+	/XXHXX/	[XXXXH]
+	XXHXX -> XXxXX -> XXXXH -> XXXXH
+	/XXXHX/	[XXXLR]
+	XXXHX -> XXXLR -> XXXLR
+	/XXXXH/	[XXXXH]
+	XXXXH -> XXXXH
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	W	e	e	L	L	e	e	
+	e	L	L	W	e	e	e	
+	e	L	L	e	e	e	W	
 	e	e	L	e	W	e	e	
 	e	e	e	W	W	L	e	
-
-
-_X XX XXX XXXX XXXXX x LR XH LMR XLR XXH LMMR XLMR XXLR XXXH LMMMR XLMMR XXLMR XXXLR XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[LR]
-	HX -> LR -> LR
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[LMR]
-	HXX -> LRX -> LMR -> LMR
-	/XHX/	[XLR]
-	XHX -> XLR -> XLR
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[LMMR]
-	HXXX -> LRXX -> LMRX -> LMMR -> LMMR
-	/XHXX/	[XLMR]
-	XHXX -> XLRX -> XLMR -> XLMR
-	/XXHX/	[XXLR]
-	XXHX -> XXLR -> XXLR
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[LMMMR]
-	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMMR -> LMMMR
-	/XHXXX/	[XLMMR]
-	XHXXX -> XLRXX -> XLMRX -> XLMMR -> XLMMR
-	/XXHXX/	[XXLMR]
-	XXHXX -> XXLRX -> XXLMR -> XXLMR
-	/XXXHX/	[XXXLR]
-	XXXHX -> XXXLR -> XXXLR
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	e	e	W	e	e	
-	W	L	L	e	e	L	e	
-	e	W	W	L	e	e	e	
-	e	e	e	L	e	e	W	
-
-
-_X XX XXX XXXX XXXXX X LR XH LMR XLR XXH LMMR XLMR XXLR XXXH LMMMR XLMMR XXLMR XXXLR XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[X]
-	H -> x -> X -> X
-	/HX/	[LR]
-	HX -> LR -> LR
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[LMR]
-	HXX -> LRX -> LMR -> LMR
-	/XHX/	[XLR]
-	XHX -> XLR -> XLR
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[LMMR]
-	HXXX -> LRXX -> LMRX -> LMMR -> LMMR
-	/XHXX/	[XLMR]
-	XHXX -> XLRX -> XLMR -> XLMR
-	/XXHX/	[XXLR]
-	XXHX -> XXLR -> XXLR
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[LMMMR]
-	HXXXX -> LRXXX -> LMRXX -> LMMRX -> LMMMR -> LMMMR
-	/XHXXX/	[XLMMR]
-	XHXXX -> XLRXX -> XLMRX -> XLMMR -> XLMMR
-	/XXHXX/	[XXLMR]
-	XXHXX -> XXLRX -> XXLMR -> XXLMR
-	/XXXHX/	[XXXLR]
-	XXXHX -> XXXLR -> XXXLR
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	L	e	e	e	W	e	e	
-	W	L	L	e	e	L	e	
-	e	W	W	L	e	e	e	
-	e	e	e	W	e	e	L	
 
 
 _X XX XXX XXXX XXXXX H LR XH LMR XLR XXH LMMR XLMR XXLR XXXH LMMMR XLMMR XXLMR XXXLR XXXXH
@@ -1095,58 +999,7 @@ _X XX XXX XXXX XXXXX H LR XH LMR XLR XXH LMMR XLMR XXLR XXXH LMMMR XLMMR XXLMR X
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	L	e	e	W	W	e	e	
 	W	L	L	e	e	L	e	
-	e	L	L	W	e	e	e	
 	e	e	L	e	W	e	e	
-
-
-_X XX XXX XXXX XXXXX H XH XH xXX XXH XXH xXXX XxXX XXXH XXXH xXXXX XxXXX XXxXX XXXXH XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[H]
-	H -> H
-	/HX/	[XH]
-	HX -> LR -> XH -> XH
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[xXX]
-	HXX -> xXX -> xXX
-	/XHX/	[XXH]
-	XHX -> XLR -> XXH -> XXH
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[xXXX]
-	HXXX -> xXXX -> xXXX
-	/XHXX/	[XxXX]
-	XHXX -> XxXX -> XxXX
-	/XXHX/	[XXXH]
-	XXHX -> XXLR -> XXXH -> XXXH
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[xXXXX]
-	HXXXX -> xXXXX -> xXXXX
-	/XHXXX/	[XxXXX]
-	XHXXX -> XxXXX -> XxXXX
-	/XXHXX/	[XXxXX]
-	XXHXX -> XXxXX -> XXxXX
-	/XXXHX/	[XXXXH]
-	XXXHX -> XXXLR -> XXXXH -> XXXXH
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	L	e	e	e	
-	e	L	L	W	e	L	e	
-	e	e	W	e	L	e	e	
-	e	e	e	L	e	e	W	
 
 
 _X XX XXX XXXX XXXXX H XH XH XXX XXH XXH XXXX XXXX XXXH XXXH XXXXX XXXXX XXXXX XXXXH XXXXH
@@ -1194,7 +1047,8 @@ _X XX XXX XXXX XXXXX H XH XH XXX XXH XXH XXXX XXXX XXXH XXXH XXXXX XXXXX XXXXX X
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	W	e	e	L	e	e	e	
-	e	L	L	W	e	L	L	
+	e	L	L	W	e	L	e	
+	e	W	W	e	e	e	L	
 	e	e	W	e	L	e	e	
 
 
@@ -1246,8 +1100,7 @@ _X XX XXX XXXX XXXXX H XH XH XXH XXH XXH XXXH XXXH XXXH XXXH XXXXH XXXXH XXXXH X
 	W	L	L	e	e	L	e	
 	e	e	W	e	L	e	e	
 
-
-_X XX XXX XXXX XXXXX X XX XH XXX XXX XXH XXXX XXXX XXXX XXXH XXXXX XXXXX XXXXX XXXXX XXXXH
+_X XX XXX XXXX XXXXX H XH XH XXH XXH XXH XXXH XXXH XXXH XXXH XXXXH XXXXH XXXXH XXXXH XXXXH
 
 	/X/	[X]
 	X -> X
@@ -1259,43 +1112,91 @@ _X XX XXX XXXX XXXXX X XX XH XXX XXX XXH XXXX XXXX XXXX XXXH XXXXX XXXXX XXXXX X
 	XXXX -> XXXX
 	/XXXXX/	[XXXXX]
 	XXXXX -> XXXXX
-	/H/	[X]
-	H -> x -> X -> X
-	/HX/	[XX]
-	HX -> xX -> XX -> XX
+	/H/	[H]
+	H -> H
+	/HX/	[XH]
+	HX -> LR -> XH -> XH
 	/XH/	[XH]
 	XH -> XH
-	/HXX/	[XXX]
-	HXX -> xXX -> XXX -> XXX
-	/XHX/	[XXX]
-	XHX -> XxX -> XXX -> XXX
+	/HXX/	[XXH]
+	HXX -> xXX -> XXH -> XXH
+	/XHX/	[XXH]
+	XHX -> XLR -> XXH -> XXH
 	/XXH/	[XXH]
 	XXH -> XXH
-	/HXXX/	[XXXX]
-	HXXX -> xXXX -> XXXX -> XXXX
-	/XHXX/	[XXXX]
-	XHXX -> XxXX -> XXXX -> XXXX
-	/XXHX/	[XXXX]
-	XXHX -> XXxX -> XXXX -> XXXX
+	/HXXX/	[XXXH]
+	HXXX -> xXXX -> XXXH -> XXXH
+	/XHXX/	[XXXH]
+	XHXX -> XxXX -> XXXH -> XXXH
+	/XXHX/	[XXXH]
+	XXHX -> XXLR -> XXXH -> XXXH
 	/XXXH/	[XXXH]
 	XXXH -> XXXH
-	/HXXXX/	[XXXXX]
-	HXXXX -> xXXXX -> XXXXX -> XXXXX
-	/XHXXX/	[XXXXX]
-	XHXXX -> XxXXX -> XXXXX -> XXXXX
-	/XXHXX/	[XXXXX]
-	XXHXX -> XXxXX -> XXXXX -> XXXXX
-	/XXXHX/	[XXXXX]
-	XXXHX -> XXXxX -> XXXXX -> XXXXX
+	/HXXXX/	[XXXXH]
+	HXXXX -> xXXXX -> XXXXH -> XXXXH
+	/XHXXX/	[XXXXH]
+	XHXXX -> XxXXX -> XXXXH -> XXXXH
+	/XXHXX/	[XXXXH]
+	XXHXX -> XXxXX -> XXXXH -> XXXXH
+	/XXXHX/	[XXXXH]
+	XXXHX -> XXXLR -> XXXXH -> XXXXH
 	/XXXXH/	[XXXXH]
 	XXXXH -> XXXXH
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	e	L	e	e	
-	e	L	L	e	W	e	e	
-	e	W	W	L	e	e	e	
-	e	e	e	W	e	e	L	
-	e	e	e	e	L	W	e	
+	W	e	e	L	e	e	e	
+	e	L	L	W	e	L	e	
+	e	L	L	e	e	e	W	
+	e	e	W	e	L	e	e	
+
+_X XX XXX XXXX XXXXX H XH XH XXH XXH XXH XXXH XXXH XXXH XXXH XXXXH XXXXH XXXXH XXXXH XXXXH
+
+	/X/	[X]
+	X -> X
+	/XX/	[XX]
+	XX -> XX
+	/XXX/	[XXX]
+	XXX -> XXX
+	/XXXX/	[XXXX]
+	XXXX -> XXXX
+	/XXXXX/	[XXXXX]
+	XXXXX -> XXXXX
+	/H/	[H]
+	H -> H
+	/HX/	[XH]
+	HX -> xX -> XH -> XH
+	/XH/	[XH]
+	XH -> XH
+	/HXX/	[XXH]
+	HXX -> xXX -> XXH -> XXH
+	/XHX/	[XXH]
+	XHX -> XxX -> XXH -> XXH
+	/XXH/	[XXH]
+	XXH -> XXH
+	/HXXX/	[XXXH]
+	HXXX -> xXXX -> XXXH -> XXXH
+	/XHXX/	[XXXH]
+	XHXX -> XxXX -> XXXH -> XXXH
+	/XXHX/	[XXXH]
+	XXHX -> XXxX -> XXXH -> XXXH
+	/XXXH/	[XXXH]
+	XXXH -> XXXH
+	/HXXXX/	[XXXXH]
+	HXXXX -> xXXXX -> XXXXH -> XXXXH
+	/XHXXX/	[XXXXH]
+	XHXXX -> XxXXX -> XXXXH -> XXXXH
+	/XXHXX/	[XXXXH]
+	XXHXX -> XXxXX -> XXXXH -> XXXXH
+	/XXXHX/	[XXXXH]
+	XXXHX -> XXXxX -> XXXXH -> XXXXH
+	/XXXXH/	[XXXXH]
+	XXXXH -> XXXXH
+
+	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
+	W	e	e	L	L	e	e	
+	e	L	L	W	e	e	e	
+	e	L	L	e	e	e	W	
+	e	e	e	L	L	W	e	
 
 
 _X XX XXX XXXX XXXXX H XX XH XXX XXX XXH XXXX XXXX XXXX XXXH XXXXX XXXXX XXXXX XXXXX XXXXH
@@ -1343,59 +1244,10 @@ _X XX XXX XXXX XXXXX H XX XH XXX XXX XXH XXXX XXXX XXXX XXXH XXXXX XXXXX XXXXX X
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
 	W	e	e	L	L	e	e	
-	e	L	L	W	e	e	L	
+	e	L	L	W	W	e	e	
+	e	W	W	e	e	e	L	
 	e	e	e	L	L	W	e	
-
-
-_X XX XXX XXXX XXXXX x xX XH xXX XxX XXH xXXX XxXX XXxX XXXH xXXXX XxXXX XXxXX XXXxX XXXXH
-
-	/X/	[X]
-	X -> X
-	/XX/	[XX]
-	XX -> XX
-	/XXX/	[XXX]
-	XXX -> XXX
-	/XXXX/	[XXXX]
-	XXXX -> XXXX
-	/XXXXX/	[XXXXX]
-	XXXXX -> XXXXX
-	/H/	[x]
-	H -> x -> x
-	/HX/	[xX]
-	HX -> xX -> xX
-	/XH/	[XH]
-	XH -> XH
-	/HXX/	[xXX]
-	HXX -> xXX -> xXX
-	/XHX/	[XxX]
-	XHX -> XxX -> XxX
-	/XXH/	[XXH]
-	XXH -> XXH
-	/HXXX/	[xXXX]
-	HXXX -> xXXX -> xXXX
-	/XHXX/	[XxXX]
-	XHXX -> XxXX -> XxXX
-	/XXHX/	[XXxX]
-	XXHX -> XXxX -> XXxX
-	/XXXH/	[XXXH]
-	XXXH -> XXXH
-	/HXXXX/	[xXXXX]
-	HXXXX -> xXXXX -> xXXXX
-	/XHXXX/	[XxXXX]
-	XHXXX -> XxXXX -> XxXXX
-	/XXHXX/	[XXxXX]
-	XXHXX -> XXxXX -> XXxXX
-	/XXXHX/	[XXXxX]
-	XXXHX -> XXXxX -> XXXxX
-	/XXXXH/	[XXXXH]
-	XXXXH -> XXXXH
-
-	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	e	L	e	e	
-	e	L	L	e	W	e	e	
-	e	W	W	L	e	e	e	
-	e	e	e	L	e	e	W	
-	e	e	e	e	L	W	e	
+	e	e	e	W	e	e	L	
 
 
 _X XX XXX XXXX XXXXX H xX XH xXX XxX XXH xXXX XxXX XXxX XXXH xXXXX XxXXX XXxXX XXXxX XXXXH
@@ -1442,9 +1294,10 @@ _X XX XXX XXXX XXXXX H xX XH xXX XxX XXH xXXX XxXX XXxX XXXH xXXXX XxXXX XXxXX X
 	XXXXH -> XXXXH
 
 	Align-R	NonFinality	*Link(H)	*Float	Max(link)	Dep(link)	Max
-	W	e	e	L	L	e	e	
-	e	L	L	W	e	e	e	
-	e	e	e	L	L	W	e	
+	W	e	e	e	L	e	e	
+	e	L	L	e	W	e	e	
+	e	W	W	L	e	e	e	
 	e	e	e	L	e	e	W	
+	e	e	e	e	L	W	e	
 
 
