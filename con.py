@@ -9,7 +9,7 @@ class AlignR:
 	def vios(self, input, candidate):
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['H', 'R', 'S']:
+			if candidate[i] in ['H', 'R']:
 				loci[0] += len(candidate) - i - 1
 		return loci
 
@@ -20,7 +20,7 @@ class NonFinality:
 		self.name = 'NonFinality'
 
 	def vios(self, input, candidate):
-		if candidate[-1] in ['H', 'R', 'S']:
+		if candidate[-1] in ['H', 'R']:
 			return [1]
 		return [0]
 
@@ -33,7 +33,7 @@ class LinkH:
 	def vios(self, input, candidate):
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['H', 'L', 'R', 'M', 'S']:
+			if candidate[i] in ['H', 'L', 'R', 'M']:
 				loci[0] += 1
 		return loci
 
@@ -95,17 +95,5 @@ class Max:
 	def vios(self, input, candidate):
 		for i in range(len(candidate)):
 			if (input[i], candidate[i]) == ('x', 'X'):
-				return [1]
-		return [0]
-
-# NoFlop
-# penalizes shifting a high tone
-class NoFlop:
-	def __init__(self):
-		self.name = 'NoFlop'
-
-	def vios(self, input, candidate):
-		for i in range(len(candidate)):
-			if candidate[i] == 'S':
 				return [1]
 		return [0]

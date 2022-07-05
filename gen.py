@@ -6,9 +6,8 @@
 # L = leftmost link
 # R = rightmost link
 # M = middle link
-# S = shifted high tone
 
-def gen_autoseg_shift(input, shift=False):
+def gen_autoseg_shift(input):
 	candidates = set()
 
 	# add fully faithful candidate
@@ -75,16 +74,5 @@ def gen_autoseg_shift(input, shift=False):
 		if input[i] == 'x':
 			candidate = input[:i] + 'H' + input[i+1:]
 			candidates.add(candidate)
-
-	if shift:
-		for i in range(len(input) - 1):
-			# local shift
-			# XH -> SX ; HX -> XS
-			if input[i:i+2] == 'XH':
-				candidate = input[:i] + 'SX' + input[i+2:]
-				candidates.add(candidate)
-			if input[i:i+2] == 'HX':
-				candidate = input[:i] + 'XS' + input[i+2:]
-				candidates.add(candidate)
 
 	return sorted(list(candidates))

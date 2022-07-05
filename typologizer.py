@@ -27,12 +27,6 @@ from gen import gen_autoseg_shift as gen
 
 con = [AlignR(), NonFinality(), LinkH(), Float(), Maxlink(), Deplink(), Max()]
 
-# allow shift?
-shift = True
-
-if shift:
-	con.append(NoFlop())
-
 typology = []
 
 # (SKB, derivation)
@@ -51,8 +45,8 @@ for ur in urs:
 			continue
 
 		# Generate candidate set
-		input = derivation[1][-1].replace('S', 'H')
-		candidates = sorted(list(gen(input, shift)))
+		input = derivation[1][-1]
+		candidates = sorted(list(gen(input)))
 
 		# Assemble tableau
 		tableau = []
