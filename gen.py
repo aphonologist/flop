@@ -7,15 +7,32 @@
 # R = rightmost link
 # M = middle link
 
-def gen_autoseg_shift(input):
+def gen_autoseg_shift(input, flop=False):
 	candidates = set()
 
 	# add fully faithful candidate
 	candidates.add(input)
 
+	# delete a linked tone
+	span = False
+	a =  0
 	for i in range(len(input)):
-		# delete a floating tone
-		# x -> X
+		if span == True:
+			if input[i] not in {'L', 'R', 'M'}:
+				candidate = input[:a] + 'X' * (i-a) + input[i:]
+				candidates.add(candidate)
+				span = False
+		else:
+			if input[i] in {'L', 'R', 'M'}:
+				a = i
+				span = True
+
+	for i in range(len(input)):
+		if input[i] == 'H':
+			candidate = input[:i] + 'X' + input[i+1:]
+			candidates.add(candidate)
+
+	for i in range(len(input)):
 		# link a floating tone
 		# x -> H ; x -> X and X -> H
 		if input[i] == 'x':
@@ -66,5 +83,14 @@ def gen_autoseg_shift(input):
 			candidates.add(candidate)
 			candidate = input[:i] + 'HX' + input[i+2:]
 			candidates.add(candidate)
+
+	if flop:
+		for i in range(len(input) - 1):
+			if input[i:i+2] == 'XH':
+				candidate = input[:i] + 'HX' + input[i+2:]
+				candidates.add(candidate)
+			if input[i:i+2] == 'HX':
+				candidate = input[:i] + 'XH' + input[i+2:]
+				candidates.add(candidate)
 
 	return sorted(list(candidates))

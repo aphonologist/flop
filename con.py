@@ -58,11 +58,11 @@ class Maxlink:
 
 	def vios(self, input, candidate):
 		for i in range(len(candidate) - 1):
-			if (input[i:i+2], candidate[i:i+2]) in [('LM', 'XL'), ('LR', 'XH'), ('MR', 'RX'), ('LR', 'HX')]:
+			if (input[i:i+2], candidate[i:i+2]) in [('LM', 'XL'), ('LR', 'XH'), ('MR', 'RX'), ('LR', 'HX'), ('XH', 'HX'), ('HX', 'XH')]:
 				return [1]
-			if (input[i], candidate[i]) == ('H', 'x'):
+			if (input[i], candidate[i]) in [('H', 'x'), ('H', 'X')]:
 				return [1]
-		if (input[-1], candidate[-1]) == ('H', 'x'):
+		if (input[-1], candidate[-1]) in [('H', 'x'), ('H', 'X')]:
 			return [1]
 		return [0]
 
@@ -74,7 +74,7 @@ class Deplink:
 
 	def vios(self, input, candidate):
 		for i in range(len(candidate) - 1):
-			if (input[i:i+2], candidate[i:i+2]) in [('XL', 'LM'), ('XH', 'LR'), ('RX', 'MR'), ('HX', 'LR')]:
+			if (input[i:i+2], candidate[i:i+2]) in [('XL', 'LM'), ('XH', 'LR'), ('RX', 'MR'), ('HX', 'LR'), ('XH', 'HX'), ('HX', 'XH')]:
 				return [1]
 			if (input[i], candidate[i]) == ('x','H'):
 				return [1]
@@ -96,6 +96,8 @@ class Max:
 				delink = True
 			if (input[i], candidate[i]) == ('X', 'H'):
 				relink = True
+			if input[i] in {'L', 'M', 'R', 'H'} and candidate[i] == 'X':
+				return [1]
 		if delink and not relink:
 			return [1]
 		return [0]
