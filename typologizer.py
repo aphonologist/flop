@@ -46,7 +46,8 @@ for ur in urs:
 
 		# Generate candidate set
 		input = derivation[1][-1]
-		candidates = sorted(list(gen(input)))
+		# bool controls whether flop is an operation
+		candidates = sorted(list(gen(input, False)))
 
 		# Assemble tableau
 		tableau = []

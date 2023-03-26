@@ -13,22 +13,21 @@ def gen_autoseg_shift(input, flop=False):
 	# add fully faithful candidate
 	candidates.add(input)
 
-	# delete a linked tone
+	# delete a high tone
 	span = False
 	a =  0
 	for i in range(len(input)):
 		if span == True:
-			if input[i] not in {'L', 'R', 'M'}:
-				candidate = input[:a] + 'X' * (i-a) + input[i:]
+			if input[i] == 'R':
+				candidate = input[:a] + 'X' * (i-a+1) + input[i+1:]
 				candidates.add(candidate)
 				span = False
 		else:
-			if input[i] in {'L', 'R', 'M'}:
+			if input[i] == 'L':
 				a = i
 				span = True
 
-	for i in range(len(input)):
-		if input[i] == 'H':
+		if input[i] in {'H', 'x'}:
 			candidate = input[:i] + 'X' + input[i+1:]
 			candidates.add(candidate)
 

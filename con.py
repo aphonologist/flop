@@ -9,7 +9,7 @@ class AlignR:
 	def vios(self, input, candidate):
 		loci = [0]
 		for i in range(len(candidate) - 1):
-			if candidate[i] in ['H', 'R']:
+			if candidate[i] in {'H', 'R'}:
 				loci[0] += len(candidate) - i - 1
 		return loci
 
@@ -20,7 +20,7 @@ class NonFinality:
 		self.name = 'NonFinality'
 
 	def vios(self, input, candidate):
-		if candidate[-1] in ['H', 'R']:
+		if candidate[-1] in {'H', 'R'}:
 			return [1]
 		return [0]
 
@@ -33,7 +33,7 @@ class LinkH:
 	def vios(self, input, candidate):
 		loci = [0]
 		for i in range(len(candidate)):
-			if candidate[i] in ['H', 'L', 'R', 'M']:
+			if candidate[i] in {'H', 'L', 'R', 'M'}:
 				loci[0] += 1
 		return loci
 
@@ -57,14 +57,11 @@ class Maxlink:
 		self.name = 'Max(link)'
 
 	def vios(self, input, candidate):
-		for i in range(len(candidate) - 1):
-			if (input[i:i+2], candidate[i:i+2]) in [('LM', 'XL'), ('LR', 'XH'), ('MR', 'RX'), ('LR', 'HX'), ('XH', 'HX'), ('HX', 'XH')]:
-				return [1]
-			if (input[i], candidate[i]) in [('H', 'x'), ('H', 'X')]:
-				return [1]
-		if (input[-1], candidate[-1]) in [('H', 'x'), ('H', 'X')]:
-			return [1]
-		return [0]
+		total = 0
+		for i in range(len(candidate)):
+			if (input[i], candidate[i]) in {('L', 'X'), ('R', 'X'), ('M', 'X'), ('H', 'X'), ('H', 'x')}:
+				total += 1
+		return [total]
 
 # Dep(link)
 # penalizes creation of a high tone link
@@ -73,14 +70,11 @@ class Deplink:
 		self.name = 'Dep(link)'
 
 	def vios(self, input, candidate):
-		for i in range(len(candidate) - 1):
-			if (input[i:i+2], candidate[i:i+2]) in [('XL', 'LM'), ('XH', 'LR'), ('RX', 'MR'), ('HX', 'LR'), ('XH', 'HX'), ('HX', 'XH')]:
-				return [1]
-			if (input[i], candidate[i]) == ('x','H'):
-				return [1]
-		if (input[-1], candidate[-1]) == ('x','H'):
-			return [1]
-		return [0]
+		total = 0
+		for i in range(len(candidate)):
+			if (input[i], candidate[i]) in {('X', 'L'), ('X', 'R'), ('X', 'M'), ('X', 'H'), ('x', 'H')}:
+				total += 1
+		return [total]
 
 # Max
 # penalizes deletion of a floating high tone
@@ -89,15 +83,13 @@ class Max:
 		self.name = 'Max'
 
 	def vios(self, input, candidate):
-		delink = False
-		relink = False
+		input_tones = 0
+		cand_tones = 0
 		for i in range(len(candidate)):
-			if (input[i], candidate[i]) == ('x', 'X'):
-				delink = True
-			if (input[i], candidate[i]) == ('X', 'H'):
-				relink = True
-			if input[i] in {'L', 'M', 'R', 'H'} and candidate[i] == 'X':
-				return [1]
-		if delink and not relink:
+			if input[i] in {'L', 'H', 'x'}:
+				input_tones += 1
+			if candidate[i] in {'L', 'H', 'x'}:
+				cand_tones += 1
+		if input_tones > cand_tones:
 			return [1]
 		return [0]
