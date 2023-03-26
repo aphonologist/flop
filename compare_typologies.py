@@ -9,8 +9,6 @@ for file in files:
 		linstr = line.rstrip()
 		if linstr:
 			if linstr.startswith('_'):
-				# distinguish floating vs. deleted -- collapses a handful of distinctions
-				linstr = linstr.replace('x', 'X')
 				typologies[file].add(linstr)
 	f.close()
 	print(file, 'contains', len(typologies[file]), 'languages')
