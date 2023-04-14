@@ -16,7 +16,7 @@ def leq(v1, v2):
 	return True
 
 # underlying forms
-urs = ['M____', '_M___', '__M__', '___M_', '____M']
+urs = ['F____', 'M____', '_M___', '__M__', '___M_', '____M']
 
 from gen import gen_autoseg_shift as gen
 
