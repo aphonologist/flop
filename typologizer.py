@@ -16,16 +16,14 @@ def leq(v1, v2):
 	return True
 
 # underlying forms
-urs = ['X' * i for i in range(1,6)]
-for i in range(5):
-	ur = urs[i]
-	for j in range(len(ur)):
-		ur2 = ur[:j] + 'H' + ur[j+1:]
-		urs.append(ur2)
+urs = ['M____', '_M___', '__M__', '___M_', '____M']
 
 from gen import gen_autoseg_shift as gen
 
-con = [AlignR(), NonFinality(), LinkH(), Float(), Maxlink(), Deplink(), Max()]
+con = [AlignR(), NonFinality(), Link(), Float(), Maxlink(), Deplink(), Max(), MaxLinked()]
+
+# set flop
+flop = False
 
 typology = []
 
@@ -47,7 +45,7 @@ for ur in urs:
 		# Generate candidate set
 		input = derivation[1][-1]
 		# bool controls whether flop is an operation
-		candidates = sorted(list(gen(input, False)))
+		candidates = gen(input, flop)
 
 		# Assemble tableau
 		tableau = []
@@ -95,7 +93,7 @@ for ur in urs:
 				# check for inconsistency
 				newSKB = FRed(combinedSKB)
 				if 'unsat' not in newSKB:
-					newderivation = (newSKB, derivation[1] + (candidates[optimum],))
+					newderivation = (newSKB, derivation[1] + (candidates[optimum][1],)) # indexed because cand/clean cand
 					stack.append(newderivation)
 
 	# combine derivations with previous derivations

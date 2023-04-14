@@ -1,0 +1,875 @@
+______ ___M_ ___M_ ___M_ ___M_ ___M_
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[___M_]
+	M____ -> _M___ -> __M__ -> ___M_ -> ___M_
+	/_M___/	[___M_]
+	_M___ -> __M__ -> ___M_ -> ___M_
+	/__M__/	[___M_]
+	__M__ -> ___M_ -> ___M_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	L	e	L	W	e	e	e	e	
+	L	e	L	e	e	e	e	W	
+	W	e	W	e	e	e	L	e	
+	W	e	e	e	L	L	e	e	
+	e	e	W	e	L	e	e	e	
+
+
+____M_ ___M_ ___M_ ___M_ ___M_ ___M_
+
+	/F____/	[___M_]
+	F____ -> ___M_ -> ___M_
+	/M____/	[___M_]
+	M____ -> _M___ -> __M__ -> ___M_ -> ___M_
+	/_M___/	[___M_]
+	_M___ -> __M__ -> ___M_ -> ___M_
+	/__M__/	[___M_]
+	__M__ -> ___M_ -> ___M_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	L	e	L	W	e	e	e	e	
+	L	e	L	e	e	e	W	e	
+	W	e	e	e	L	L	e	e	
+	e	e	W	e	L	e	e	e	
+
+
+______ MRRR_ _MRR_ __MR_ ___M_ ___M_
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	L	e	e	e	
+	L	e	e	W	e	e	e	e	
+	L	e	e	e	e	e	e	W	
+	W	e	L	e	e	L	L	e	
+	e	e	L	e	W	e	e	e	
+
+
+____M_ MRRR_ _MRR_ __MR_ ___M_ ___M_
+
+	/F____/	[___M_]
+	F____ -> ___M_ -> ___M_
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	L	e	e	e	
+	L	e	e	W	e	e	e	e	
+	L	e	e	e	e	e	W	e	
+	W	e	L	e	e	L	e	e	
+	e	e	L	e	W	e	e	e	
+
+
+______ M____ _M___ __M__ ___M_ ___M_
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	W	e	e	W	L	e	
+	L	e	e	e	W	W	e	e	
+	e	W	e	e	L	L	e	e	
+	e	e	L	W	e	L	e	e	
+	e	e	L	e	e	L	e	W	
+
+
+____M_ M____ _M___ __M__ ___M_ ___M_
+
+	/F____/	[___M_]
+	F____ -> ___M_ -> ___M_
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[___M_]
+	____M -> ___M_ -> ___M_
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	W	e	e	W	e	e	
+	L	e	e	e	W	W	e	e	
+	e	W	e	e	L	L	e	e	
+	e	e	L	W	e	L	e	e	
+	e	e	L	e	e	L	W	e	
+
+
+______ MRRR_ _MRR_ __MR_ ___M_ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[_____]
+	____M -> ____F -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	e	W	e	e	e	
+	W	e	L	L	e	L	e	e	
+	e	W	e	e	L	e	e	e	
+	e	e	e	L	e	e	e	W	
+	e	e	e	W	e	e	L	e	
+
+______ MRRR_ _MRR_ __MR_ ___M_ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[_____]
+	____M -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	e	W	e	e	e	
+	W	e	L	e	e	L	L	L	
+	e	W	e	e	L	e	e	e	
+	e	e	e	W	e	e	L	L	
+
+
+______ M____ _M___ __M__ ___M_ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[_____]
+	____M -> ____F -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	L	W	W	e	e	e	
+	L	e	W	L	e	W	e	e	
+	e	W	e	L	L	e	e	e	
+	e	e	e	L	e	e	e	W	
+	e	e	e	W	e	e	L	e	
+
+______ M____ _M___ __M__ ___M_ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[_____]
+	____M -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	L	e	W	e	W	W	
+	L	e	W	e	e	W	L	L	
+	e	W	e	e	L	e	L	L	
+	e	e	e	W	e	e	L	L	
+
+
+______ _____ _____ _____ _____ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> F____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _F___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> __F__ -> _____ -> _____
+	/___M_/	[_____]
+	___M_ -> ___F_ -> _____ -> _____
+	/____M/	[_____]
+	____M -> ____F -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	W	L	L	e	e	e	
+	e	W	W	L	L	e	e	e	
+	e	e	e	L	e	e	e	W	
+	e	e	e	W	e	e	L	e	
+
+______ _____ _____ _____ _____ _____
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[_____]
+	___M_ -> _____ -> _____
+	/____M/	[_____]
+	____M -> _____ -> _____
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	W	e	L	e	L	L	
+	e	W	W	e	L	e	L	L	
+	e	e	e	W	e	e	L	L	
+
+
+_F____ MRRR_ _MRR_ __MR_ ___M_ ____F
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____F]
+	____M -> ____F -> ____F
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	e	W	e	e	e	
+	W	e	L	L	e	L	e	e	
+	e	W	e	e	L	e	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+_F____ M____ _M___ __M__ ___M_ ____F
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____F]
+	____M -> ____F -> ____F
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	L	W	W	e	e	e	
+	L	e	W	L	e	W	e	e	
+	e	W	e	L	L	e	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+_F____ F____ _F___ __F__ ___F_ ____F
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[F____]
+	M____ -> F____ -> F____
+	/_M___/	[_F___]
+	_M___ -> _F___ -> _F___
+	/__M__/	[__F__]
+	__M__ -> __F__ -> __F__
+	/___M_/	[___F_]
+	___M_ -> ___F_ -> ___F_
+	/____M/	[____F]
+	____M -> ____F -> ____F
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	W	L	L	e	e	e	
+	e	W	W	L	L	e	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+______ MRRR_ _MRR_ __MR_ ___M_ ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	W	e	L	e	e	L	L	e	
+	e	L	e	e	W	e	e	e	
+	e	e	e	W	e	e	L	e	
+
+
+____M_ MRRR_ _MRR_ __MR_ ___M_ ____M
+
+	/F____/	[___M_]
+	F____ -> ___M_ -> ___M_
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	L	e	e	W	e	e	e	e	
+	L	e	e	e	e	e	W	e	
+	W	e	L	e	e	L	e	e	
+	e	L	e	e	W	e	e	e	
+
+
+_F____ MRRR_ _MRR_ __MR_ ___M_ ____M
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[MRRR_]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRR_
+	/_M___/	[_MRR_]
+	_M___ -> _MR__ -> _MRR_ -> _MRR_
+	/__M__/	[__MR_]
+	__M__ -> __MR_ -> __MR_
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	W	e	L	L	e	L	e	e	
+	e	L	e	e	W	e	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+______ M____ _M___ __M__ ___M_ ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	L	L	W	W	e	e	e	
+	L	L	L	e	W	e	W	W	
+	L	L	e	e	W	W	e	e	
+	L	e	W	e	e	W	L	e	
+	e	e	e	W	e	e	L	e	
+
+
+____M_ M____ _M___ __M__ ___M_ ____M
+
+	/F____/	[___M_]
+	F____ -> ___M_ -> ___M_
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	W	e	e	e	e	e	e	
+	L	e	W	e	e	W	e	e	
+	e	L	e	e	W	W	e	e	
+	e	e	L	W	e	L	e	e	
+	e	e	L	e	e	L	W	e	
+
+
+_____M M____ _M___ __M__ ___M_ ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	W	e	e	W	e	e	
+	L	e	e	e	W	W	e	e	
+	W	L	e	e	e	e	e	e	
+	e	e	L	W	e	L	e	e	
+	e	e	L	e	e	L	W	e	
+
+
+_F____ M____ _M___ __M__ ___M_ ____M
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[M____]
+	M____ -> M____
+	/_M___/	[_M___]
+	_M___ -> _M___
+	/__M__/	[__M__]
+	__M__ -> __M__
+	/___M_/	[___M_]
+	___M_ -> ___M_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	L	L	W	W	e	e	e	
+	L	e	W	L	e	W	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+______ _____ _____ _____ ___MR ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> F____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _F___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> __F__ -> _____ -> _____
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	L	e	e	e	
+	e	L	e	W	W	L	e	e	
+	e	W	W	e	e	W	L	e	
+	e	e	L	e	W	e	e	e	
+	e	e	e	L	e	e	e	W	
+	e	e	e	W	e	e	L	e	
+
+______ _____ _____ _____ ___MR ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	L	e	e	L	
+	e	L	e	e	W	L	e	W	
+	e	W	W	e	e	W	L	e	
+	e	e	L	e	W	e	e	e	
+	e	e	e	W	e	e	L	L	
+
+
+_____M ____M ____M ____M ___MR ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[____M]
+	M____ -> F____ -> ____M -> ____M
+	/_M___/	[____M]
+	_M___ -> _F___ -> ____M -> ____M
+	/__M__/	[____M]
+	__M__ -> __F__ -> ____M -> ____M
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	L	e	e	e	
+	e	L	L	W	e	L	e	e	
+	e	L	L	e	e	L	W	e	
+	e	e	L	e	W	e	e	e	
+	e	e	e	L	e	e	W	W	
+
+
+_F____ F____ _F___ __F__ ___MR ____M
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[F____]
+	M____ -> F____ -> F____
+	/_M___/	[_F___]
+	_M___ -> _F___ -> _F___
+	/__M__/	[__F__]
+	__M__ -> __F__ -> __F__
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	L	e	e	e	
+	e	L	L	e	W	L	e	e	
+	e	W	W	L	e	W	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+_____M _____ _____ _____ ___MR ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	L	e	L	L	
+	e	L	L	e	e	L	W	e	
+	e	e	L	e	W	e	e	e	
+	e	e	e	W	e	e	L	L	
+
+
+______ MRRRR _MRRR __MRR ___MR ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[MRRRR]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRRR -> MRRRR
+	/_M___/	[_MRRR]
+	_M___ -> _MR__ -> _MRR_ -> _MRRR -> _MRRR
+	/__M__/	[__MRR]
+	__M__ -> __MR_ -> __MRR -> __MRR
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	W	W	e	e	e	
+	L	e	e	e	W	e	e	W	
+	W	L	L	e	e	L	e	e	
+	e	W	W	e	e	W	L	e	
+	e	e	L	e	W	e	e	e	
+	e	e	e	W	e	e	L	e	
+
+
+_____M MRRRR _MRRR __MRR ___MR ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[MRRRR]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRRR -> MRRRR
+	/_M___/	[_MRRR]
+	_M___ -> _MR__ -> _MRR_ -> _MRRR -> _MRRR
+	/__M__/	[__MRR]
+	__M__ -> __MR_ -> __MRR -> __MRR
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	W	W	e	e	e	
+	L	e	e	e	W	e	W	W	
+	W	L	L	e	e	L	e	e	
+	e	L	L	W	e	L	e	e	
+	e	L	L	e	e	L	W	e	
+	e	e	L	e	W	e	e	e	
+
+
+_F____ MRRRR _MRRR __MRR ___MR ____M
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[MRRRR]
+	M____ -> MR___ -> MRR__ -> MRRR_ -> MRRRR -> MRRRR
+	/_M___/	[_MRRR]
+	_M___ -> _MR__ -> _MRR_ -> _MRRR -> _MRRR
+	/__M__/	[__MRR]
+	__M__ -> __MR_ -> __MRR -> __MRR
+	/___M_/	[___MR]
+	___M_ -> ___MR -> ___MR
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	e	e	W	e	e	e	
+	W	L	L	e	e	L	e	e	
+	e	W	W	L	e	W	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+______ _____ _____ _____ _____ ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> F____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _F___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> __F__ -> _____ -> _____
+	/___M_/	[_____]
+	___M_ -> ___F_ -> _____ -> _____
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	L	e	e	e	
+	e	L	L	W	W	e	e	e	
+	e	e	e	L	L	W	e	e	
+	e	e	e	L	e	e	e	W	
+	e	e	e	W	e	e	L	e	
+
+______ _____ _____ _____ _____ ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[_____]
+	___M_ -> _____ -> _____
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	L	e	L	L	
+	e	L	L	e	W	e	W	W	
+	e	e	e	W	e	e	L	L	
+	e	e	e	e	L	W	L	L	
+
+
+_F____ F____ _F___ __F__ ___F_ ____M
+
+	/F____/	[F____]
+	F____ -> F____
+	/M____/	[F____]
+	M____ -> F____ -> F____
+	/_M___/	[_F___]
+	_M___ -> _F___ -> _F___
+	/__M__/	[__F__]
+	__M__ -> __F__ -> __F__
+	/___M_/	[___F_]
+	___M_ -> ___F_ -> ___F_
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	L	e	e	e	
+	e	L	L	W	W	e	e	e	
+	e	e	e	L	L	W	e	e	
+	e	e	e	L	e	e	W	e	
+
+
+______ ____M ____M ____M ____M ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[____M]
+	M____ -> _M___ -> __M__ -> ___M_ -> ____M -> ____M
+	/_M___/	[____M]
+	_M___ -> __M__ -> ___M_ -> ____M -> ____M
+	/__M__/	[____M]
+	__M__ -> ___M_ -> ____M -> ____M
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	L	W	e	e	e	e	
+	L	e	L	e	e	e	e	W	
+	W	L	e	e	L	L	e	e	
+	e	W	W	e	e	W	L	e	
+	e	e	W	e	L	e	e	e	
+
+
+_____M ____M ____M ____M ____M ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[____M]
+	M____ -> F____ -> ____M -> ____M
+	/_M___/	[____M]
+	_M___ -> _F___ -> ____M -> ____M
+	/__M__/	[____M]
+	__M__ -> __F__ -> ____M -> ____M
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	e	e	e	e	
+	e	L	L	W	e	L	e	e	
+	e	L	L	e	e	L	W	e	
+	e	e	W	e	L	e	e	e	
+	e	e	e	L	e	e	W	W	
+
+_____M ____M ____M ____M ____M ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[____M]
+	M____ -> _M___ -> __M__ -> ___M_ -> ____M -> ____M
+	/_M___/	[____M]
+	_M___ -> __M__ -> ___M_ -> ____M -> ____M
+	/__M__/	[____M]
+	__M__ -> ___M_ -> ____M -> ____M
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	L	e	L	W	e	e	e	e	
+	L	e	e	e	e	e	W	W	
+	W	L	e	e	L	L	e	e	
+	e	L	L	e	e	L	W	e	
+	e	e	W	e	L	e	e	e	
+
+
+______ _____ _____ _____ ____M ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> F____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _F___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> __F__ -> _____ -> _____
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	L	e	e	e	e	
+	e	L	L	W	e	L	e	e	
+	e	W	W	e	e	W	L	e	
+	e	e	W	e	L	e	e	e	
+	e	e	e	L	e	e	e	W	
+
+______ _____ _____ _____ ____M ____M
+
+	/F____/	[_____]
+	F____ -> _____ -> _____
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	e	e	e	L	
+	e	L	L	e	e	L	e	W	
+	e	W	W	e	e	W	L	e	
+	e	e	W	e	L	e	e	e	
+	e	e	e	W	e	e	e	L	
+
+
+_____M _____ _____ _____ ____M ____M
+
+	/F____/	[____M]
+	F____ -> ____M -> ____M
+	/M____/	[_____]
+	M____ -> _____ -> _____
+	/_M___/	[_____]
+	_M___ -> _____ -> _____
+	/__M__/	[_____]
+	__M__ -> _____ -> _____
+	/___M_/	[____M]
+	___M_ -> ____M -> ____M
+	/____M/	[____M]
+	____M -> ____M
+
+	Align-R	NonFinality	*Link	*Float	Max(link)	Dep(link)	Max	MaxLinked
+	W	e	e	e	e	e	L	L	
+	e	L	L	e	e	L	W	e	
+	e	e	W	e	L	e	e	e	
+	e	e	e	W	e	e	L	L	
+
+
