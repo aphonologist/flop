@@ -1,7 +1,7 @@
 ## Constraints
 
 # Align-R
-# penalizes segmentes that intervene between linked feature and right edge of word
+# penalizes segments that intervene between linked feature and right edge of word
 class AlignR:
 	def __init__(self):
 		self.name = 'Align-R'
